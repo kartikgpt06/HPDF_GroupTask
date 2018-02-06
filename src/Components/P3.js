@@ -4,6 +4,7 @@ import Avatar from 'material-ui/Avatar';
 import paypallogo from './Images/paypallogo.png';
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
+import { Link } from 'react-router-dom';
 
 const styleCard = {
   marginLeft:'10px',
@@ -33,7 +34,7 @@ const Post3 = () => (
         subtitle="Pay Now"
         avatar={paypallogo}
       />
-      <RaisedButton label="Payment" primary={true} style={style} onclick={<a href= './Payment.js'></a>} />
+      <Link to="/payment"><RaisedButton label="Payment" primary={true} style={style} onclick={<a href= './Payment.js'></a>}/></Link>
         </Card>
   );
 
